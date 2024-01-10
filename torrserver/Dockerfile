@@ -3,7 +3,7 @@ FROM $BUILD_FROM
 
 # Copy root filesystem
 COPY rootfs /
-RUN chmod +x /run.sh
+RUN chmod a+x run.sh
 
 # Install deps
 RUN apk add --no-cache \
